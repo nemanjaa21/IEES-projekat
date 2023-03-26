@@ -11,10 +11,12 @@ namespace FTN.Common
 
 		public EnumDescs()
 		{
-			property2enumType.Add(ModelCode.CONDEQ_PHASES, typeof(PhaseCode));
-			property2enumType.Add(ModelCode.POWERTR_FUNC, typeof(TransformerFunction));
-			property2enumType.Add(ModelCode.POWERTRWINDING_CONNTYPE, typeof(WindingConnection));
-			property2enumType.Add(ModelCode.POWERTRWINDING_WINDTYPE, typeof(WindingType));														
+			//dodao za svoje enumeracije i model kodove, ovo je zato sto su ovi atributi tipa ENUM
+			property2enumType.Add(ModelCode.BASICINTSCH_VAL1UNIT, typeof(UnitSymbol));
+			property2enumType.Add(ModelCode.BASICINTSCH_VAL2UNIT, typeof(UnitSymbol));
+			property2enumType.Add(ModelCode.BASICINTSCH_VAL1MULTI, typeof(UnitMultiplier));
+			property2enumType.Add(ModelCode.BASICINTSCH_VAL2MULTI, typeof(UnitMultiplier));
+
 		}
 
 		public List<string> GetEnumList(ModelCode propertyId)

@@ -865,21 +865,23 @@ namespace FTN.Common
 		# region Initialization of metadata
 
 		private void InitializeTypeIdsInInsertOrder()
-		{			
-			typeIdsInInsertOrder.Add(ModelCode.BASEVOLTAGE);
-			typeIdsInInsertOrder.Add(ModelCode.LOCATION);
-			typeIdsInInsertOrder.Add(ModelCode.POWERTR);
-			typeIdsInInsertOrder.Add(ModelCode.POWERTRWINDING);
-			typeIdsInInsertOrder.Add(ModelCode.WINDINGTEST);			
+		{   //Sve konkretne klase dodate 
+			typeIdsInInsertOrder.Add(ModelCode.DAYTYPE);
+			typeIdsInInsertOrder.Add(ModelCode.SEASON);
+			typeIdsInInsertOrder.Add(ModelCode.BREAKER);
+			typeIdsInInsertOrder.Add(ModelCode.RECLOSER);
+			typeIdsInInsertOrder.Add(ModelCode.LOADBREAKSWITCH);
+			typeIdsInInsertOrder.Add(ModelCode.SWITCHSCHEDULE);
+			typeIdsInInsertOrder.Add(ModelCode.REGULARTIMEPOINT);
 		}
 
 		private void InitializeNotSettablePropertyIds()
-		{			
-			notSettablePropertyIds.Add(ModelCode.IDOBJ_GID);
-			notSettablePropertyIds.Add(ModelCode.BASEVOLTAGE_CONDEQS);
-			notSettablePropertyIds.Add(ModelCode.LOCATION_PSRS);
-			notSettablePropertyIds.Add(ModelCode.POWERTRWINDING_TESTS);
-            notSettablePropertyIds.Add(ModelCode.POWERTR_WINDINGS);	
+		{   // notSettable su one liste referenci sa naseg profila
+			notSettablePropertyIds.Add(ModelCode.IDOBJ_GID); // gid ne mozemo setovati sami
+			notSettablePropertyIds.Add(ModelCode.REGULARINTSCH_RTPS); 
+			notSettablePropertyIds.Add(ModelCode.DAYTYPE_SEASONDTSCHEDULES);
+			notSettablePropertyIds.Add(ModelCode.SEASON_SEASONDTSCHEDULES);
+			notSettablePropertyIds.Add(ModelCode.SWITCH_SCHS);
 		}
 	
 		# endregion Initialization of metadata

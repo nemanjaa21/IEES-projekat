@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+	<cim:DayType rdf:ID="DT_01">
+		<cim:IdentifiedObject.aliasName>DT_01</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DT_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>DT_01</cim:IdentifiedObject.name>
+	</cim:DayType>
+	<cim:DayType rdf:ID="DT_02">
+		<cim:IdentifiedObject.aliasName>DT_02</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DT_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>DT_02</cim:IdentifiedObject.name>
+	</cim:DayType>
+	<cim:Season rdf:ID="SE_01">
+		<cim:Season.endDate>2012-12-12</cim:Season.endDate>
+		<cim:Season.startDate>2012-11-11</cim:Season.startDate>
+		<cim:IdentifiedObject.aliasName>SE_01</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SE_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>SE_01</cim:IdentifiedObject.name>
+	</cim:Season>
+	<cim:Season rdf:ID="SE_02">
+		<cim:Season.endDate>2012-12-12</cim:Season.endDate>
+		<cim:Season.startDate>2012-11-11</cim:Season.startDate>
+		<cim:IdentifiedObject.aliasName>SE_02</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SE_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>SE_02</cim:IdentifiedObject.name>
+	</cim:Season>
+	<cim:Breaker rdf:ID="BR_01">
+		<cim:Breaker.inTransitTime rdf:resource="#"/>
+		<cim:ProtectedSwitch.breakingCapacity rdf:resource="#"/>
+		<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent rdf:resource="#"/>
+		<cim:Switch.retained>true</cim:Switch.retained>
+		<cim:Switch.switchOnCount>100</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>2012-12-12</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>true</cim:Equipment.aggregate>
+		<cim:Equipment.normallyInService>false</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>BR_01</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>BR_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BR_01</cim:IdentifiedObject.name>
+	</cim:Breaker>
+	<cim:Breaker rdf:ID="BR_02">
+		<cim:Breaker.inTransitTime rdf:resource="#"/>
+		<cim:ProtectedSwitch.breakingCapacity rdf:resource="#"/>
+		<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent rdf:resource="#"/>
+		<cim:Switch.retained>true</cim:Switch.retained>
+		<cim:Switch.switchOnCount>100</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>2012-12-12</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>true</cim:Equipment.aggregate>
+		<cim:Equipment.normallyInService>false</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>BR_02</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>BR_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BR_02</cim:IdentifiedObject.name>
+	</cim:Breaker>
+	<cim:Recloser rdf:ID="RC_01">
+		<cim:ProtectedSwitch.breakingCapacity rdf:resource="#"/>
+		<cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent rdf:resource="#"/>
+		<cim:Switch.retained>false</cim:Switch.retained>
+		<cim:Switch.switchOnCount>200</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>2012-12-12</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+		<cim:Equipment.normallyInService>false</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>RC_01</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RC_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RC_01</cim:IdentifiedObject.name>
+	</cim:Recloser>
+	<cim:Recloser rdf:ID="RC_02">
+		<cim:ProtectedSwitch.breakingCapacity rdf:resource="#"/>
+		<cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent rdf:resource="#"/>
+		<cim:Switch.retained>true</cim:Switch.retained>
+		<cim:Switch.switchOnCount>200</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>2012-11-11</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+		<cim:Equipment.normallyInService>false</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>RC_02</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RC_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RC_02</cim:IdentifiedObject.name>
+	</cim:Recloser>
+	<cim:LoadBreakSwitch rdf:ID="LB_01">
+		<cim:ProtectedSwitch.breakingCapacity rdf:resource="#"/>
+		<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent rdf:resource="#"/>
+		<cim:Switch.retained>true</cim:Switch.retained>
+		<cim:Switch.switchOnCount>300</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>2012-11-11</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>true</cim:Equipment.aggregate>
+		<cim:Equipment.normallyInService>false</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>LB_01</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>LB_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>LB_01</cim:IdentifiedObject.name>
+	</cim:LoadBreakSwitch>
+	<cim:LoadBreakSwitch rdf:ID="LB_02">
+		<cim:ProtectedSwitch.breakingCapacity rdf:resource="#"/>
+		<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+		<cim:Switch.ratedCurrent rdf:resource="#"/>
+		<cim:Switch.retained>true</cim:Switch.retained>
+		<cim:Switch.switchOnCount>300</cim:Switch.switchOnCount>
+		<cim:Switch.switchOnDate>2012-11-11</cim:Switch.switchOnDate>
+		<cim:Equipment.aggregate>true</cim:Equipment.aggregate>
+		<cim:Equipment.normallyInService>false</cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>LB_02</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>LB_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>LB_02</cim:IdentifiedObject.name>
+	</cim:LoadBreakSwitch>
+	<cim:SwitchSchedule rdf:ID="SS_01">
+		<cim:SwitchSchedule.Switch rdf:resource="#LB_02"/>
+		<cim:SeasonDayTypeSchedule.DayType rdf:resource="#DT_01"/>
+		<cim:SeasonDayTypeSchedule.Season rdf:resource="#SE_01"/>
+		<cim:RegularIntervalSchedule.endTime>2012-12-13</cim:RegularIntervalSchedule.endTime>
+		<cim:RegularIntervalSchedule.timeStep rdf:resource="#"/>
+		<cim:BasicIntervalSchedule.startTime>2012-11-11</cim:BasicIntervalSchedule.startTime>
+		<cim:BasicIntervalSchedule.value1Multiplier>M</cim:BasicIntervalSchedule.value1Multiplier>
+		<cim:BasicIntervalSchedule.value1Unit>VA</cim:BasicIntervalSchedule.value1Unit>
+		<cim:BasicIntervalSchedule.value2Multiplier>M</cim:BasicIntervalSchedule.value2Multiplier>
+		<cim:BasicIntervalSchedule.value2Unit>VAr</cim:BasicIntervalSchedule.value2Unit>
+		<cim:IdentifiedObject.aliasName>SS_01</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SS_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>SS_01</cim:IdentifiedObject.name>
+	</cim:SwitchSchedule>
+	<cim:SwitchSchedule rdf:ID="SS_02">
+		<cim:SwitchSchedule.Switch rdf:resource="#LB_01"/>
+		<cim:SeasonDayTypeSchedule.DayType rdf:resource="#DT_02"/>
+		<cim:SeasonDayTypeSchedule.Season rdf:resource="#SE_01"/>
+		<cim:RegularIntervalSchedule.endTime>2012-12-13</cim:RegularIntervalSchedule.endTime>
+		<cim:RegularIntervalSchedule.timeStep rdf:resource="#"/>
+		<cim:BasicIntervalSchedule.startTime>2012-12-12</cim:BasicIntervalSchedule.startTime>
+		<cim:BasicIntervalSchedule.value1Multiplier>M</cim:BasicIntervalSchedule.value1Multiplier>
+		<cim:BasicIntervalSchedule.value1Unit>VA</cim:BasicIntervalSchedule.value1Unit>
+		<cim:BasicIntervalSchedule.value2Multiplier>M</cim:BasicIntervalSchedule.value2Multiplier>
+		<cim:BasicIntervalSchedule.value2Unit>VAr</cim:BasicIntervalSchedule.value2Unit>
+		<cim:IdentifiedObject.aliasName>SS_02</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SS_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>SS_02</cim:IdentifiedObject.name>
+	</cim:SwitchSchedule>
+	<cim:RegularTimePoint rdf:ID="RT_01">
+		<cim:RegularTimePoint.IntervalSchedule rdf:resource="#SS_01"/>
+		<cim:RegularTimePoint.sequenceNumber>5</cim:RegularTimePoint.sequenceNumber>
+		<cim:RegularTimePoint.value1>13.5</cim:RegularTimePoint.value1>
+		<cim:RegularTimePoint.value2>12.5</cim:RegularTimePoint.value2>
+		<cim:IdentifiedObject.aliasName>RT_01</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RT_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RT_01</cim:IdentifiedObject.name>
+	</cim:RegularTimePoint>
+	<cim:RegularTimePoint rdf:ID="RT_02">
+		<cim:RegularTimePoint.IntervalSchedule rdf:resource="#SS_02"/>
+		<cim:RegularTimePoint.sequenceNumber>5</cim:RegularTimePoint.sequenceNumber>
+		<cim:RegularTimePoint.value1>14.5</cim:RegularTimePoint.value1>
+		<cim:RegularTimePoint.value2>10.5</cim:RegularTimePoint.value2>
+		<cim:IdentifiedObject.aliasName>RT_02</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RT_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RT_02</cim:IdentifiedObject.name>
+	</cim:RegularTimePoint>
+</rdf:RDF>

@@ -114,6 +114,15 @@
     <rdfs:label>J</rdfs:label>
     <rdf:type rdf:resource="#UnitSymbol"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#RegularIntervalSchedule.timeStep">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The time between each pair of subsequent regular time points in sequence order.</rdfs:comment>
+    <rdfs:label>timeStep</rdfs:label>
+    <rdfs:range rdf:resource="#Seconds"/>
+    <rdfs:domain rdf:resource="#RegularIntervalSchedule"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#UnitSymbol.h">
     <rdfs:comment>Time in hours.</rdfs:comment>
     <rdfs:label>h</rdfs:label>
@@ -204,6 +213,15 @@ For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about a
     <rdfs:comment>This is a root class to provide common identification for all classes needing identification and naming attributes.</rdfs:comment>
     <rdfs:label>IdentifiedObject</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RegularIntervalSchedule.endTime">
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdfs:comment>The time for the last time point.</rdfs:comment>
+    <rdfs:label>endTime</rdfs:label>
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="#RegularIntervalSchedule"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
   <rdf:Description rdf:about="#BasicIntervalSchedule.value1Unit">
     <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>

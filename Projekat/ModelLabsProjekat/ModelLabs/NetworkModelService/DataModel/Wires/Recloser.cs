@@ -4,15 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace FTN.Services.NetworkModelService.DataModel.Core
+namespace FTN.Services.NetworkModelService.DataModel.Wires
 {
-    public class PowerSystemResource : IdentifiedObject
+    public class Recloser : ProtectedSwitch
     {
-		public PowerSystemResource(long globalId)
-			: base(globalId)
+		public Recloser(long globalId) : base(globalId)
 		{
 		}
-
 
 		public override bool Equals(object obj)
 		{

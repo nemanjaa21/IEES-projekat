@@ -34,7 +34,7 @@ namespace FTN.Common
 
 		POWERSYSRES = 0x1100000000000000, // na drugo mesto kec jer je on nasledio IDOBJ
 
-		BASICINTSCH = 0x1200000000000000, // na drugo mesto 2 jer je on nasledio POWER SYSTEM RESOURCE drugi po redu, sve nule jer nema atribut ni referencu
+		BASICINTSCH = 0x1200000000000000, // na drugo mesto 2 jer je on nasledio ID OBJ drugi po redu, sve nule jer nema atribut ni referencu
 		BASICINTSCH_STARTTIME = 0x1200000000000108,
 		BASICINTSCH_VAL1MULTI = 0x120000000000020a,
 		BASICINTSCH_VAL1UNIT = 0x120000000000030a,
@@ -45,7 +45,7 @@ namespace FTN.Common
 		REGULARTIMEPOINT_SEQUENCE = 0x1300000000010103,
 		REGULARTIMEPOINT_VALUE1 = 0x1300000000010205,
 		REGULARTIMEPOINT_VALUE2 = 0x1300000000010305,
-		REGULARTIMEPOINT_RIS = 0x1300000000010409,
+		REGULARTIMEPOINT_RIS = 0x1300000000010409, // 09 je referenca, 19 je lista referenci odnosnoVEKTOR
 
 		DAYTYPE = 0x1400000000020000,// konkretna klasa , predposlednje cetri cifre 0002 je DMS tip 
 		DAYTYPE_SEASONDTSCHEDULES = 0x1400000000020119, // 19 je referenca na tip
